@@ -48,6 +48,18 @@ namespace EierfarmBl
             }
         }
 
+        private string _stall;
+
+        public string Stall
+        {
+            get { return _stall; }
+            set {
+
+                _stall = value; }
+        }
+
+
+
         // Auto-Property-Initializer
         public ObservableCollection<Ei> Eier { get; set; } = new ObservableCollection<Ei>();
 

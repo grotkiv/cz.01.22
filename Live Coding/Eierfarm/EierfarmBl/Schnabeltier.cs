@@ -6,7 +6,7 @@ using System.Text;
 
 namespace EierfarmBl
 {
-    public class Schnabeltier : Saeugetier, IEiLeger
+    public sealed class Schnabeltier : Saeugetier, IEiLeger
     {
         public ObservableCollection<Ei> Eier { get; set; }
         public int Gewicht { get; set; }
