@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TradingDayDal</name>
+    </assembly>
+    <members>
+        <member name="M:TradingDayDal.Archive.#ctor(System.String)">
+            <summary>
+            New instance of an Archive
+            </summary>
+            <param name="url">URL of a GESMES XML file.</param>
+        </member>
+        <member name="P:TradingDayDal.Archive.TradingDays">
+            <summary>
+            The TradingDays maintained by this Archive.
+            </summary>
+        </member>
+        <member name="T:TradingDayDal.Currency">
+            <summary>
+            Stellt eine Währung dar.
+            </summary>
+        </member>
+        <member name="P:TradingDayDal.Currency.EuroRate">
+            <summary>
+            Gibt den Eurokurs der Währung zurück oder legt ihn fest.
+            </summary>
+            <remarks>
+            1 EUR = EuroRate
+            </remarks>
+        </member>
+        <member name="P:TradingDayDal.Currency.Symbol">
+            <summary>
+            Stellt das 3-buchstabige ISO-Zeichen der Währung dar.
+            </summary>
+        </member>
+        <member name="M:TradingDayDal.ListExtensionMethods.AddIfNew``1(System.Collections.Generic.List{``0},``0)">
+            <summary>
+            Adds an element to the list, if the list not already contains it.
+            </summary>
+            <typeparam name="T">Type of the Element to be added.</typeparam>
+            <param name="list">The list.</param>
+            <param name="element">The element to be added.</param>
+        </member>
+        <member name="T:TradingDayDal.TradingDay">
+            <summary>
+            A TradingDay.
+            </summary>
+        </member>
+        <member name="P:TradingDayDal.TradingDay.Date">
+            <summary>
+            Gets or sets the date of this TradingDay
+            </summary>
+        </member>
+        <member name="P:TradingDayDal.TradingDay.Currencies">
+            <summary>
+            The Currencies of this TradingDay
+            </summary>
+        </member>
+    </members>
+</doc>

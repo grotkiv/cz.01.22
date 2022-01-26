@@ -11,6 +11,11 @@ namespace TradingDayDal
     /// </summary>
     public class TradingDay
     {
+        public TradingDay()
+        {
+
+        }
+
         public TradingDay(XElement tradingDayNode)
         {
             this.Date = Convert.ToDateTime(tradingDayNode.Attribute("time").Value);
